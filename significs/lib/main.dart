@@ -32,7 +32,7 @@ class MyHomePage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Scanning for Flex Sensor Gloves"),
+        title: const Text("Scanning the environment for Flex Sensor Gloves"),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,

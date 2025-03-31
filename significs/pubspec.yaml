@@ -10,7 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_reactive_ble: ^5.4.0
-  flutter_blue_plus:
+  flutter_blue_plus: ^1.4.0
   get:
   permission_handler: ^11.0.1
   cupertino_icons: ^1.0.2

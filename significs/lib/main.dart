@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:flutter_blue_plus/flutter_blue_plus.dart'; // Import FlutterBluePlus
 import 'ble_controller.dart'; // Adjusted the import path to match the local file structure
 
 void main() {

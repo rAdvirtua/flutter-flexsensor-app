@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'ble_controller.dart'; // Adjusted the import path to match the local file structure
+import 'ble_controller.dart' hide WelcomePage;
+import 'pages/welcome.dart'; // Import the Welcome Page
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +18,11 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(),
+      initialRoute: '/welcome', // Set the Welcome Page as the initial route
+      getPages: [
+        GetPage(name: '/welcome', page: () => const WelcomePage()),
+        GetPage(name: '/main', page: () => const MyHomePage()),
+      ],
     );
   }
 }
